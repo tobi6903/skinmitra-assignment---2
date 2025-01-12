@@ -59,7 +59,7 @@ def main():
         if boxes:
 
             result_image = draw_boxes(image.copy(), boxes, labels)
-            st.image(result_image, caption="Detection Result", use_column_width=True)
+            st.image(result_image, caption="Detection Result", use_container_width=True)
         else:
             st.write("No cats or dogs detected in the image.")
 
